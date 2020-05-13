@@ -1,5 +1,5 @@
 ## Pengaduan Masyarakat
-Aplikasi Berbasis Website Sederhana Tentang Pelelangan Online Menggunakan Laravel + Mysql
+Aplikasi Berbasis Website Sederhana Tentang Pelelangan Online, Dibuat Menggunakan Laravel + Mysql
 
 ## Fitur Admin
 - Login
