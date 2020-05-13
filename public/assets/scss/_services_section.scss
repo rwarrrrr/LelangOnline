@@ -1,0 +1,83 @@
+.services-area{
+    background: #f7f7f7;
+    .single-services{
+        @media #{$sm}{
+           margin-bottom: 30px;
+        }
+        @media #{$xs}{
+           margin-bottom: 30px;
+        }
+        .services-img{
+            img {
+                width: 100%;
+            }
+        }
+        .services-caption {
+            position: relative;
+            background: #fff;
+            width: 80%;
+            padding: 33px 46px 16px 32px;
+            margin-top: -50px;
+            @media #{$md}{
+                width: 95%;
+            }
+            @media #{$sm}{
+                width: 100%;
+                padding: 33px 16px 16px 26px;
+                margin-top: 0px;
+            }
+            @media #{$xs}{
+                width: 100%;
+                padding: 33px 16px 16px 26px;
+                margin-top: 0px;
+            }
+            span {
+                margin-bottom: 15px;
+                line-height: 13px;
+                font-family: $font_1;
+                position: relative;
+                color: #e94d65;
+                font-weight: 300;
+                font-size: 14px;
+                display: block;
+                padding-left: 60px;
+               &::before {
+                    position: absolute;
+                    content: "";
+                    width: 35px;
+                    height: 2px;
+                    top: 0;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    background: #e94d65;
+                }
+            }
+            p {
+                margin-bottom: 15px;
+                line-height: 1.5;
+                font-family: $font_2;
+                a{
+                    color: #0e132a;
+                    font-weight: 400;
+                    font-size: 20px;
+                    display: block;
+                    &:hover{
+                        color: $theme-color;
+                    }
+                    @media #{$md}{
+                      font-size: 18px;
+                    }
+                    @media #{$xs}{
+                      font-size: 18px;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+
+
+

@@ -1,0 +1,274 @@
+.slider-height {
+    height: 900px;
+    @media #{$lg}{
+        height: 700px;
+    }
+    @media #{$md}{
+        height: 650px;
+    }
+    @media #{$sm}{
+        height: 500px;
+    }
+    @media #{$xs}{
+        height: 500px;
+    }
+}
+
+
+.slider-height2{
+    height: 450px;
+    background-size: cover;
+    @media #{$md}{
+        height: 350px;
+    }
+    @media #{$sm}{
+        height: 260px;
+    }
+    @media #{$xs}{
+        height: 260px;
+    }
+}
+.slider-area2{
+    background-image: url(../img/hero/hero2.jpg);
+    background-repeat:no-repeat ;
+    background-size: cover;
+}
+
+.slider-area{
+    margin-top: -1px;
+    background-image: url(../img/hero/h1_hero.jpg);
+    background-repeat:no-repeat ;
+    background-position: center center;
+    background-size: cover;
+    .hero__caption{
+        overflow: hidden;
+        @media #{$large1}{
+            padding-left: 100px;
+        }
+        span{
+            font-size: 18px;
+            font-family: $font_1;
+            font-weight: 500;
+            margin-bottom: 22px;
+            text-transform: uppercase;
+            color:#eb566c;
+            display: inline-block;
+            position: relative;
+            padding-left: 100px;
+            @media #{$xs}{
+                font-size: 13px;
+            }
+            &::before{
+                position: absolute;
+                content: "";
+                width: 70px;
+                height: 2px;
+                background: #eb566c;
+                top: 0;
+                left:0px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+        & h1{
+            font-size: 85px;
+            font-weight: 800;
+            margin-bottom: 14px;
+            color: #000000;
+            font-family: $font_3;
+            line-height: 1.2;
+            margin-bottom: 33px;
+            @media #{$large1}{
+                font-size: 71px;
+            }
+            @media #{$lg}{
+                font-size: 60px;
+                line-height: 1.2;
+            }
+            @media #{$md}{
+                font-size: 50px;
+                line-height: 1.2;
+            }
+            @media #{$sm}{
+                font-size: 35px;
+                line-height: 1.2;
+            }
+            @media #{$xs}{
+                font-size:29px;
+                line-height: 1.2;
+            }
+        }
+        & p{
+            font-size: 16px;
+            color: #000000;
+            font-family: $font_1;
+            margin-bottom: 39px;
+            margin-bottom: 7px;
+            margin-bottom: 50px;
+            @media #{$xs}{
+                margin-bottom: 30px;
+                font-size: 14px;
+                br{
+                    display: none;
+                }
+            }
+            @media #{$sm}{
+                br{
+                    display: none;
+                }
+            }
+            @media #{$md}{
+                br{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+// Hero Overly
+.hero-overly {
+    position: relative;
+    z-index: 1;
+    &::before {
+        position: absolute;
+        content: "";
+        background-color: rgba(1, 10, 28,  0.3);
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+        background-repeat: no-repeat;
+    }
+}
+.hero-overly2 {
+    position: relative;
+    z-index: 1;
+    &::before {
+        position: absolute;
+        content: "";
+        background-color: rgba(13, 45, 62,0.8);
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+        background-repeat: no-repeat;
+    }
+}
+
+//  Transparent Header
+.header-transparent {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 9;
+}
+
+// Another Hero Page
+.slider-area2{
+    .hero-cap{
+        & h2{
+            color: #fff;
+            font-size: 60px;
+            font-weight: 700;
+            text-transform: capitalize;
+            line-height: 1;
+            @media #{$sm}{
+                font-size: 50px;
+              }
+            @media #{$xs}{
+                font-size: 35px;
+              }
+        }
+        .breadcrumb {
+            background: none;
+            padding: 0;
+            margin: 0;
+
+            a {
+                color: #dcdcdc;
+                font-size: 18px;
+                text-transform: capitalize;
+            }
+        }
+        .breadcrumb-item + .breadcrumb-item::before {
+            color: #dcdcdc;
+        }
+    }
+
+}
+
+
+// arrow
+.slider-active {
+    & button{
+        &.slick-arrow {
+            position: absolute;
+            top: 50%;
+            left: 100px;
+            @media #{$large1}{
+                left: 15px;
+            }
+            @media #{$large2}{
+                left: 20px;
+            }
+            @media #{$lg}{
+                right: 130px;
+                left: auto;
+           }
+            // @media #{$lg}{
+            //     right: 100px;
+            // }
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+            background: none;
+            border: 0;
+            padding: 0;
+            z-index: 2;
+            opacity: 1;
+            visibility: visible;
+            height: 60px;
+            width: 60px;
+            cursor: pointer;
+            border: 1px solid #a6b4bb ;
+           @include transition(.4s);
+            i{
+                font-size: 20px;
+                line-height: 60px;
+                color: #a6b4bb;
+                @include transition(.3s);
+            }
+        }
+        &.slick-next {
+            left: auto;
+            right: 100px;
+            @media #{$lg}{
+                right: 50px;
+            }
+        }
+    }
+    button.slick-next {
+        border: 1px solid #1b4962;
+            i{
+            color: #1b4962;
+        }
+        @media #{$laptop}{
+            right: 20px; 
+        }
+    }
+    & button:hover {
+        border: 1px solid #1b4962;
+         i{
+            color: #1b4962;
+        }
+    }
+    
+}
